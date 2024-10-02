@@ -1,0 +1,39 @@
+[
+    {
+      "title": "Java",
+      "imageSrc": "skills/java-icon.png"
+    },
+    {
+      "title": "C",
+      "imageSrc": "skills/c-icon.png"
+    },
+    {
+      "title": "React",
+      "imageSrc": "skills/react-js-icon.png"
+    },
+
+    {
+      "title": "Python",
+      "imageSrc": "skills/python-icon.png"
+    },
+    {
+        "title": "Figma",
+        "imageSrc": "skills/figma-icon.png"
+      },
+      {
+        "title": "RasPi",
+        "imageSrc": "skills/raspberry-pi-icon.png"
+      },
+    {
+      "title": "English",
+      "imageSrc": "skills/usaflag.png"
+    },
+    {
+        "title": "Mandarin",
+        "imageSrc": "skills/chinaflag.png"
+      },
+    {
+      "title": "Russian",
+      "imageSrc": "skills/russiaflag.png"
+    }
+  ]

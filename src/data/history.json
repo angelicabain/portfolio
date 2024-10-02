@@ -1,0 +1,22 @@
+[
+    {
+      "role": "Chinese Immersion Program for Cybersecurity Students",
+      "organisation": "Indiana University of Pennsylvania",
+      "startDate": "May, 2024",
+      "endDate": "Present",
+      "experiences": ["Selected for a competitive Department of Defense fellowship to enhance Chinese language skills for cybersecurity" , 
+      "Completed 200+ hours in a 10-week summer program, with continued activities throughout the school year, including tutoring, asynchronous assignments, and monthly cybersecurity lectures"     
+      , "Developed and presented projects, including cybersecurity case studies in Mandarin, demonstrating proficiency in language and cybersecurity concepts"],
+      "imageSrc": "history/iup.png"
+    },
+    {
+      "role": "AI Scholar Intern",
+      "organisation": "George Mason University",
+      "startDate": "May, 2023",
+      "endDate": "June, 2023",
+      "experiences": ["Learned from professors and graduate students at George Mason University as part of a Department of Defense-sponsored project" , 
+      "Expanded AI knowledge through studying Raspberry Pi software, hardware, and libraries like OpenCV" , 
+      "Created a final project using OpenCV and Python with potential applications in Search and Rescue (SAR)"],
+      "imageSrc": "history/georgemason.png"
+    }
+  ]
