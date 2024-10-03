@@ -1,17 +1,17 @@
 [
     {
       "title": "Personal Portfolio Website",
-      "imageSrc": "projects/power75.png",
+      "imageSrc": "projects/portfolio.png",
       "description": "This project serves as a platform to showcase my work, connect with professionals, and share my experiences while exploring React, animations, and UX/UI design principles. As my first website, it has been an invaluable learning experience that has enhanced my skills!",
       "skills": ["React", "JavaScript", "HTML/CSS"],
       "source": "https://github.com/angelicabain/portfolio"
     },
     {
       "title": "Book Angel",
-      "imageSrc": "projects/power75.png",
+      "imageSrc": "projects/bookangel.png",
       "description": "Book Angel is my personalized book tracking app and an alternative to Goodreads. It features GoogleBooks API, custom bookshelves, half-star ratings, AI-powered summaries, and similar book recommendations to enhance reading experiences.",
       "skills": ["React Native", "Google Books API", "Node.js"],
-      "source": "https://www.github.com/angelicabain"
+      "source": "https://github.com/angelicabain/bookApp"
     },
     {
       "title": "Power75",

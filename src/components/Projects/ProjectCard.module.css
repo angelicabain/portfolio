@@ -4,10 +4,15 @@
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    background-color: linear-gradient(180deg, #576cbc 0% , #132a53 100%);
-    box-shadow: 0 16px 14px 0 #04152d;
+    background: radial-gradient(circle, #cee0f3 50% , #7EB4F1 100%);
+    
     padding: 18px 24px;
     max-width: 345px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-10px);
 }
 
 .image{
@@ -41,7 +46,7 @@
     font-size: 15px;
     font-weight: 400; 
     border-radius: 100px;
-    background-color: var(--color-dark);
+    background-color: #CEE0F3;
     padding: 2px 22px;
 }
 
@@ -58,6 +63,13 @@
     font-size: 20px;
     font-weight: 600;
     border-radius: 100px;
-    background: var(--color-primary);
+    background: #CEE0F3;
     padding: 1px 22px;
+
+    transition: box-shadow 0.3s ease;
+}
+
+
+.link:hover {
+    box-shadow: 0 0 15px rgba(10, 51, 98, 0.5);
 }

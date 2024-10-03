@@ -29,9 +29,9 @@
     animation: colorShift 3s infinite;
 }
 @keyframes colorShift {
-    0% { color: #E4E5E2; } 
-    50% { color: #8a939e; } 
-    100% { color: #DfDACC; } 
+    0% { color: #0a3362; } 
+    50% { color: #3269A8; } 
+    100% { color: #0a3362; } 
 }
 
 .description
@@ -54,10 +54,15 @@
     padding: 26px 26px;
     margin-bottom: 10px;
     box-shadow: 0 0 4px 0 rgba(0,0,0,0.25);
+
+    transition: box-shadow 0.8s ease-in-out;
+}
+.contactBtn:hover {
+    box-shadow: 0 0 40px 20px rgba(173,202,235, 0.6); 
 }
 
 .heroImg {
-    width: 50%;
+    width: 40%;
     z-index:1;
     border-radius: 100%;
 
@@ -68,6 +73,7 @@
 
     transition: box-shadow 0.5s ease-in-out;
 }
+
 
 @keyframes floating {
     0%{
@@ -83,7 +89,7 @@
     }
 }
 .heroImg:hover {
-    box-shadow: 0 0 40px 20px rgba(25,55,109, 0.6); 
+    box-shadow: 0 0 40px 20px rgba(173,202,235, 0.6); 
 }
 
 .topBlur
@@ -96,7 +102,7 @@
     top: -120px;
     left: 10vw;
     border-radius: 764px;
-    background: rgba(25,55,109,0.7);
+    background: rgba(173,202,235, 0.6);
     filter: blur(100px);
     z-index: 0;
 }
@@ -111,7 +117,7 @@
     top: 250px;
     right: -25vw;
     border-radius: 764px;
-    background: rgba(25,55,109,0.7);
+    background: rgba(173,202,235, 0.6);
     filter: blur(100px);
     z-index: 0;
 }

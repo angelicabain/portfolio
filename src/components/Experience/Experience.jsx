@@ -25,6 +25,7 @@ export const Experience = () => {
 
         }
         </div>
+
         <ul className = {styles.history}> 
         {history.map((historyItem, id) => {
                 return(
@@ -49,6 +50,8 @@ export const Experience = () => {
         </ul>
 
     </div>
+    <div className = {styles.topBlur} />
+    <div className = {styles.bottomBlue} />
      </section>
     
     ;

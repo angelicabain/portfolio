@@ -39,14 +39,22 @@
 }
 
 .skillImageContainer{
-    background-color: var(--color-secondary);
+    background-color: rgb(206, 224, 243);
     border-radius: 100%;
     display: flex; 
     align-items: center;
     justify-content: center; 
     width: 100px;
     height: 100px;
+    z-index: 1;
+   
+    transition: transform 0.3s ease;
 }
+.skillImageContainer:hover {
+
+    transform: translateY(-10px);
+}
+
 
 .skillImageContainer img{
     width: 75px;
@@ -73,16 +81,27 @@
     gap: 18px; 
     background: #19376d;
 
-    background: linear-gradient(90deg,#19376d 0%, rgba(25,55,109,0) 100%);
+    background: radial-gradient(circle ,rgb(173, 203, 235, 1) 40%, rgba(25,55,109,0) 100%);
     border-radius: 10px;
     padding: 24px;
+    z-index: 1;
 
+    transition: transform 0.3s ease;
+}
+
+.historyItem:hover {
+    transform: translateY(-10px);
+}
+.historyItem:hover img {
+    transform: rotate(10deg);
 }
 
 .historyItem img{
-    width: 50px;
+    transition: transform 0.3s ease;
+    width: 60px;
 
 }
+
 
 .historyItemDetails{
     font-family: var(--font-roboto);
@@ -106,6 +125,22 @@
     list-style-type: disc;
     margin-left:18px;
 }
+
+.topBlur
+{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    min-width: 400px;
+    min-height: 400px;
+    top: 1400px;
+    left: 0vw;
+    border-radius: 764px;
+    background: rgba(173,202,235, 0.6);
+    filter: blur(150px);
+    z-index: 0;
+}
+
 
 @media screen and (max-width: 830px)
 {
