@@ -4,7 +4,7 @@ Hi! I’m **Angelica Bain**, and this is my personal website, where I share my p
 
 ## 🌐 Check It Out!
 
-Visit my personal website here: [angelicabain.com](angelicabain.com)
+Visit my personal website here: [angelicabain.com](https://angelicabain.com)
 
 
 ## 🛠️ Tech Stack
