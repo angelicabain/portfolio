@@ -1,22 +1,50 @@
 [
-    {
-      "role": "Chinese Immersion Program for Cybersecurity Students",
-      "organisation": "Indiana University of Pennsylvania",
-      "startDate": "May, 2024",
-      "endDate": "Present",
-      "experiences": ["Selected for a competitive Department of Defense fellowship to enhance Chinese language skills for cybersecurity" , 
-      "Completed 200+ hours in a 10-week summer program, with continued activities throughout the school year, including tutoring, asynchronous assignments, and monthly cybersecurity lectures"     
-      , "Developed and presented projects, including cybersecurity case studies in Mandarin, demonstrating proficiency in language and cybersecurity concepts"],
-      "imageSrc": "history/iup.png"
-    },
-    {
-      "role": "AI Scholar Intern",
-      "organisation": "George Mason University",
-      "startDate": "May, 2023",
-      "endDate": "June, 2023",
-      "experiences": ["Learned from professors and graduate students at George Mason University as part of a Department of Defense-sponsored project" , 
-      "Expanded AI knowledge through studying Raspberry Pi software, hardware, and libraries like OpenCV" , 
-      "Created a final project using OpenCV and Python with potential applications in Search and Rescue (SAR)"],
-      "imageSrc": "history/georgemason.png"
-    }
-  ]
+  {
+    "role": "Backend Software Engineering Intern",
+    "organisation": "Intuit",
+    "startDate": "May, 2025",
+    "endDate": "August, 2025",
+    "experiences": [
+      "Improved pipeline performance and reduced computational costs on the Verified Identity Network team",
+      "Contributed to secure API and authentication development through rigorous unit and integration testing",
+      "Worked in Agile sprints, ensuring backend systems were reliable, maintainable, and well-documented"
+    ],
+    "imageSrc": "history/intuit.png"
+  },
+  {
+    "role": "Undergraduate Research Assistant",
+    "organisation": "Collaborative Robotics Lab",
+    "startDate": "March, 2025",
+    "endDate": "May, 2025",
+    "experiences": [
+      "Designed and ran user studies to analyze how robotic speech and movement affect human trust",
+      "Contributed to the development of adaptive models for trust calibration in human-robot interaction",
+      "Helped shape experimental design in high vs. low cognitive load scenarios, combining psychology and robotics"
+    ],
+    "imageSrc": "about/uvalogo.png"
+  },
+  {
+    "role": "Chinese Immersion Program for Cybersecurity Students",
+    "organisation": "Indiana University of Pennsylvania",
+    "startDate": "May, 2024",
+    "endDate": "Present",
+    "experiences": [
+      "Awared a competitive Department of Defense fellowship to enhance Chinese language skills for cybersecurity",
+      "Completed 200+ hours in a 10-week summer program, with continued activities throughout the school year, including tutoring, asynchronous assignments, and monthly cybersecurity lectures",
+      "Developed and presented projects, including cybersecurity case studies in Mandarin, demonstrating proficiency in language and cybersecurity concepts"
+    ],
+    "imageSrc": "history/iup.png"
+  },
+  {
+    "role": "AI Scholar Intern",
+    "organisation": "George Mason University",
+    "startDate": "May, 2023",
+    "endDate": "June, 2023",
+    "experiences": [
+      "Learned from professors and graduate students at George Mason University as part of a Department of Defense-sponsored project",
+      "Expanded AI knowledge through studying Raspberry Pi software, hardware, and libraries like OpenCV",
+      "Created a final project using OpenCV and Python with potential applications in Search and Rescue (SAR)"
+    ],
+    "imageSrc": "history/georgemason.png"
+  }
+]

@@ -1,25 +1,30 @@
 @import "../../vars.css";
 
-.container{
+.container {
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    /* center horizontally */
+    justify-content: center;
+    /* center vertically if container has height */
     margin-top: 50px;
     z-index: 1;
     margin-left: 10%;
     margin-right: 10%;
+    text-align: center;
+    /* also center text */
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     color: var(--color-text);
     z-index: 1;
 }
 
-.title{
+.title {
     font-size: 72px;
     font-weight: 900;
     margin-bottom: 33px;
@@ -28,22 +33,29 @@
 
     animation: colorShift 3s infinite;
 }
+
 @keyframes colorShift {
-    0% { color: #0a3362; } 
-    50% { color: #3269A8; } 
-    100% { color: #0a3362; } 
+    0% {
+        color: #0a3362;
+    }
+
+    50% {
+        color: #3269A8;
+    }
+
+    100% {
+        color: #0a3362;
+    }
 }
 
-.description
-{
+.description {
     font-size: 30px;
     font-family: var(--font-roboto);
     margin-bottom: 52px;
 
 }
 
-.contactBtn
-{
+.contactBtn {
     text-decoration: none;
     background-color: var(--color-primary);
 
@@ -53,47 +65,75 @@
     font-weight: 600;
     padding: 26px 26px;
     margin-bottom: 10px;
-    box-shadow: 0 0 4px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 
     transition: box-shadow 0.8s ease-in-out;
 }
-.contactBtn:hover {
-    box-shadow: 0 0 40px 20px rgba(173,202,235, 0.6); 
+
+@keyframes floatRotate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(5deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+@keyframes wiggle {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(5deg);
+    }
+
+    30% {
+        transform: rotate(-5deg);
+    }
+
+    45% {
+        transform: rotate(4deg);
+    }
+
+    60% {
+        transform: rotate(-4deg);
+    }
+
+    75% {
+        transform: rotate(2deg);
+    }
+
+    90% {
+        transform: rotate(-2deg);
+    }
 }
 
 .heroImg {
-    width: 40%;
-    z-index:1;
+    width: 30%;
     border-radius: 100%;
+    margin-bottom: 30px;
 
-    animation-name: floating; 
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-
+    animation: floatRotate 6s ease-in-out infinite;
     transition: box-shadow 0.5s ease-in-out;
+    z-index: 1;
 }
 
-
-@keyframes floating {
-    0%{
-        transform: translate(0, 0px);
-    }
-    50%
-    {
-        transform: translate(0,10px);
-    }
-    100%
-    {
-        transform: translate(0,-0px);
-    }
-}
+/* When hovered: pause floatRotate and play wiggle once */
 .heroImg:hover {
-    box-shadow: 0 0 40px 20px rgba(173,202,235, 0.6); 
+    animation: wiggle 0.6s ease-in-out;
+    box-shadow: 0 0 40px 20px rgba(173, 202, 235, 0.6);
 }
 
-.topBlur
-{
+
+.topBlur {
     position: absolute;
     width: 50%;
     height: 50%;
@@ -102,13 +142,12 @@
     top: -120px;
     left: 10vw;
     border-radius: 764px;
-    background: rgba(173,202,235, 0.6);
+    background: rgba(173, 202, 235, 0.6);
     filter: blur(100px);
     z-index: 0;
 }
 
-.bottomBlur
-{
+.bottomBlur {
     position: absolute;
     width: 70vw;
     height: 50vw;
@@ -117,19 +156,17 @@
     top: 250px;
     right: -25vw;
     border-radius: 764px;
-    background: rgba(173,202,235, 0.6);
+    background: rgba(173, 202, 235, 0.6);
     filter: blur(100px);
     z-index: 0;
 }
 
-@media screen and (max-width: 830px)
-{
-    .container 
-    {
+@media screen and (max-width: 830px) {
+    .container {
         flex-direction: column-reverse;
 
     }
-    
+
     .content {
         align-items: center;
     }
