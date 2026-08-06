@@ -1,82 +1,55 @@
 @import "../../vars.css";
 
-.container{
-    color: var(--color-text);
-    margin-top: 120px;
-    background-color: #91BFF3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100vw;
-    padding: 58px 10%;
-    gap: 10px; 
+.container {
+    background-color: #223d68;
+    scroll-margin-top: 5.5rem;
 }
 
-.text h2{
-    font-size: 70px;
-    font-weight: 700;
-    letter-spacing: 4px;
+.inner {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 5rem var(--gutter);
 }
 
-.text p{
-    font-size: 34px;
-    font-weight: 400;
-    letter-spacing: 2px;
+.heading {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: #faf9f5;
+    margin-bottom: 0.75rem;
+}
+
+.text {
+    font-size: 1rem;
+    color: rgba(250, 249, 245, 0.72);
+    margin-bottom: 2.25rem;
 }
 
 .links {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    list-style: none;
-    gap: 26px;
+    gap: 2rem;
 }
 
-.link {
-    display: flex;
-    align-items: center;
-    gap: 25px; 
+.links a {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #faf9f5;
+    text-decoration: underline;
+    text-decoration-color: rgba(250, 249, 245, 0.35);
+    text-underline-offset: 5px;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
-.link img{
-    width: 50px;
-    height: 50px;
-    transition: box-shadow 0.5s ease-in-out;
-    border-radius: 20%;
-}
-.link img:hover {
-    box-shadow: 0 0 20px 10px rgba(206, 224, 243, 0.8); 
+.links a:hover {
+    color: #c4d3ef;
+    text-decoration-style: wavy;
+    text-decoration-color: #c4d3ef;
 }
 
-.link a {
-    color: var(--color-text);
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-    transition: box-shadow 0.5s ease-in-out;
-    border-radius: 20%;
-    display: inline-block; 
-}
-
-.link a:hover {
-    box-shadow: 0 0 40px 20px rgba(206, 224, 243, 0.8); 
-}
-
-@media screen and (max-width: 830px)
-{
-    .container{
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .links{
-        align-items: center;
+@media screen and (max-width: 640px) {
+    .inner {
+        padding-top: 3.5rem;
+        padding-bottom: 3rem;
     }
 }

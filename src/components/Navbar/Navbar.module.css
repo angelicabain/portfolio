@@ -1,83 +1,73 @@
 @import "../../vars.css";
 
 .navbar {
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(250, 249, 245, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-hairline);
+}
+
+.inner {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 1rem var(--gutter);
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
-    padding-top: 60px;
-    z-index: 2;
-    margin: 0 10%;
+    gap: 1rem;
 }
 
-.title {
-    font-size: 30px;
-    font-weight: 600;
+.name {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    font-weight: 500;
     text-decoration: none;
-    color: var(--color-text);
-
+    color: var(--color-ink);
+    letter-spacing: 0.01em;
 }
 
-.menuBtn {
-    display: none;
+.name::before {
+    content: "\2605\FE0E";
+    color: var(--color-accent);
+    margin-right: 0.5em;
+    font-size: 0.85em;
 }
 
-.menu {
+.links {
     display: flex;
-}
-
-.menuItems {
-    display: flex;
-    gap: 48px;
+    gap: 1.75rem;
     list-style: none;
 }
 
-.menuItems a {
-    font-size: 25px;
-    color: var(--color-text);
+.links a {
+    font-size: 0.875rem;
+    font-weight: 450;
+    color: var(--color-ink-soft);
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-/*based on width of page edit view */
-@media screen and (max-width: 830px) {
-    .navbar {
+.links a:hover {
+    color: var(--color-accent);
+}
+
+@media screen and (max-width: 640px) {
+    .inner {
         flex-direction: column;
         align-items: flex-start;
+        gap: 0.375rem;
+        padding-top: 0.875rem;
+        padding-bottom: 0.875rem;
     }
 
-    .menu {
-        position: absolute;
-        right: 0;
-        margin-right: 10%;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 11px;
-        z-index: 3;
+    .links {
+        gap: 1.25rem;
     }
 
-    .menuBtn {
-        display: block;
-        cursor: pointer;
-        width: 10%
+    .links a {
+        font-size: 0.8125rem;
     }
-
-    .menuItems {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        gap: 13px;
-        border-radius: 10px;
-        background: rgb(173, 203, 235);
-
-        background: linear-gradient(0deg, rgba(173, 203, 235, 0.8) 0%, rgba(25, 55, 109, 0.5) 100%);
-
-        padding: 24px 33px;
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-    }
-
-    .menuOpen {
-        display: flex;
-        z-index: 1;
-    }
-
 }

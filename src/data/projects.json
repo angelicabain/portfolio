@@ -1,24 +1,38 @@
 [
   {
-    "title": "Personal Portfolio Website",
-    "imageSrc": "projects/portfolio.png",
-    "description": "This project serves as a platform to showcase my work, connect with professionals, and share my experiences while exploring React, animations, and UX/UI design principles. As my first website, it has been an invaluable learning experience that has enhanced my skills!",
-    "skills": [
-      "React",
-      "JavaScript",
-      "HTML/CSS"
-    ],
-    "source": "https://github.com/angelicabain/portfolio"
+    "title": "RLHF & Gender-Bias Circuits in LLMs",
+    "award": "1st Place · Claude Builders Club × ML@UVA × UVA Data Science hackathon",
+    "description": "Mechanistic-interpretability study of Gemma-3-4B base vs. instruct using WinoBias contrast pairs, per-head ablations, and logit-lens analysis — showing RLHF suppresses rather than removes gender bias via a late-layer counter-circuit.",
+    "skills": ["PyTorch", "Mechanistic Interpretability"],
+    "links": [
+      { "label": "Slides", "url": "https://docs.google.com/presentation/d/1l0UFxY5dcBAA46qGW3VOuA-dr8ZhCXPcAoGSxn0hnkc/edit" }
+    ]
   },
   {
-    "title": "ML4UVA: Satellite-Based Carbon Sequestration Estimation",
-    "imageSrc": "projects/ml4uva.png",
-    "description": "Developed a custom convolutional neural network (CNN) architecture using Keras to classify multi-spectral Landsat 8 satellite imagery. Achieved 89% validation accuracy in segmenting Virginia’s wetlands, contributing to climate-focused machine learning research.",
-    "skills": [
-      "Python",
-      "Keras",
-      "scikit-learn"
-    ],
-    "source": "https://nrichnguyen.wixsite.com/ml4va"
+    "title": "Fluency",
+    "award": "HooHacks 2026",
+    "description": "Camera-first language-learning app that identifies real-world objects, teaches their translation and pronunciation in six languages, and grades written and spoken quiz responses with LLM feedback.",
+    "skills": ["React Native", "Expo", "TypeScript", "FastAPI", "Cloud Vision", "Llama 3.3", "Whisper"],
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/angelicabain/hoohacks26" }
+    ]
+  },
+  {
+    "title": "Resonance",
+    "award": "Winner, Best Use of Gemini API",
+    "description": "Full-stack app that generates personalized music from YouTube playlists and natural-language prompts; prototyped playlist steering from MusicGen hidden-state activations as editable taste vectors, shipped generation on Lyria.",
+    "skills": ["Next.js", "React", "FastAPI", "PyTorch", "Lyria API"],
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/angelicabain/Hack-to-the-Beat-2026" }
+    ]
+  },
+  {
+    "title": "Satellite-Based Carbon Sequestration Estimation",
+    "award": "ML4UVA",
+    "description": "Custom convolutional neural network built with Keras to classify multi-spectral Landsat 8 satellite imagery, reaching 89% validation accuracy segmenting Virginia's wetlands for climate-focused ML research.",
+    "skills": ["Python", "Keras", "scikit-learn"],
+    "links": [
+      { "label": "Project site", "url": "https://nrichnguyen.wixsite.com/ml4va" }
+    ]
   }
 ]

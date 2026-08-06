@@ -1,34 +1,18 @@
 [
   {
-    "title": "Java",
-    "imageSrc": "skills/java-icon.png"
+    "category": "Programming",
+    "items": ["Java", "Python", "C", "JavaScript / TypeScript", "SQL", "HTML & CSS"]
   },
   {
-    "title": "C",
-    "imageSrc": "skills/c-icon.png"
+    "category": "Frameworks & AI/ML",
+    "items": ["Spring Boot", "React", "Next.js", "FastAPI", "LangChain", "PyTorch", "Playwright", "LLM evaluation & agentic systems", "Mechanistic interpretability", "NLP", "ROS"]
   },
   {
-    "title": "Python",
-    "imageSrc": "skills/python-icon.png"
+    "category": "Tools & Practices",
+    "items": ["Git", "AWS", "Splunk", "Amplitude", "Langfuse", "CI/CD", "Microservices", "REST APIs", "A/B experimentation", "Agile"]
   },
   {
-    "title": "Figma",
-    "imageSrc": "skills/figma-icon.png"
-  },
-  {
-    "title": "RasPi",
-    "imageSrc": "skills/raspberry-pi-icon.png"
-  },
-  {
-    "title": "English",
-    "imageSrc": "skills/usaflag.png"
-  },
-  {
-    "title": "Mandarin",
-    "imageSrc": "skills/chinaflag.png"
-  },
-  {
-    "title": "Russian",
-    "imageSrc": "skills/russiaflag.png"
+    "category": "Languages",
+    "items": ["English (native)", "Mandarin Chinese (professional working proficiency)", "Russian (conversational)"]
   }
 ]

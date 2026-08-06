@@ -1,58 +1,34 @@
-import React from "react";
-import { getImageUrl } from "../../utils";
 import styles from "./About.module.css";
-
 
 export const About = () => {
     return (
-        <section className={styles.container} id="about">
-            <h2 className={styles.title}> About</h2>
-
-            <div className={styles.content}>
-                <ul className={styles.aboutItems}>
-                    <li className={styles.aboutItem}>
-                        <img src={getImageUrl("about/uvalogo.png")} alt="uva icon" className={styles.imageIcon}
-
-                        />
-                        <div className={styles.aboutItemText}>
-                            <p> I'm a third-year Computer Science and Chinese Language and Literature student at the University of Virginia with interests in AI innovations, robotics, cybersecurity, and software development.
-                            </p>
-                        </div>
-                    </li>
-
-
-                    <li className={styles.aboutItem}>
-                        <img src={getImageUrl("about/travel.png")} alt="outdoors icon" className={styles.imageIcon} />
-                        <div className={styles.aboutItemText} > <p>
-                            Currently, I'm studying abroad in Taiwan, where I'm exploring global technology trends and strengthening my Mandarin skills!
-                        </p>
-
-                        </div>
-                    </li>
-
-                    <li className={styles.aboutItem}>
-                        <img src={getImageUrl("about/hackathon.png")} alt="hackathon icon" className={styles.imageIcon} />
-                        <div className={styles.aboutItemText}>
-                            <p> Previously, I led the Hacker Experience Team for the Women in Computer Science Hackathon Committee and actively participate in tech communities like ML@UVA and ProjectCode. </p>
-                            <p>
-                            </p>
-                        </div>
-                    </li>
-
-
-                    <li className={styles.aboutItem}>
-                        <img src={getImageUrl("about/forest-icon.png")} alt="outdoors icon" className={styles.imageIcon} />
-                        <div className={styles.aboutItemText} > <p>
-                            Outside of tech, I enjoy staying active through outdoor activities and sports, balancing my academic life with involvement in the Club Pickleball Team and Outdoors Club.
-                        </p>
-
-                        </div>
-                    </li>
-
-                </ul>
-
+        <section className={styles.container} id="about" data-reveal>
+            <h2 className={styles.heading}>About</h2>
+            <div className={styles.prose}>
+                <p>
+                    This past summer I interned at Intuit in New York, working on AI
+                    agents for QuickBooks onboarding. At UVA, I&rsquo;m a research
+                    assistant in the Learning and Interactive Robotics Lab, where I
+                    work on evaluating robot performance across manipulation and
+                    navigation tasks.
+                </p>
+                <p>
+                    Last fall I studied abroad at National Chengchi University in
+                    Taipei, and I&rsquo;ve completed a Department of Defense language
+                    fellowship in Mandarin for cybersecurity. Outside of school, I
+                    love staying active and going hiking or playing pickleball.
+                </p>
             </div>
+            <ul className={styles.education}>
+                <li>
+                    <span className={styles.school}>University of Virginia</span>
+                    <span className={styles.detail}>B.A. Computer Science &amp; Chinese Language and Literature · 3.98 GPA · 2023–2027</span>
+                </li>
+                <li>
+                    <span className={styles.school}>National Chengchi University, Taipei</span>
+                    <span className={styles.detail}>Semester study abroad, Chinese and Data Science · Fall 2025</span>
+                </li>
+            </ul>
         </section>
-
-    )
-}; 
+    );
+};
